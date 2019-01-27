@@ -6,7 +6,7 @@
 * Fork the main dt-collect-web-client repo
 * Clone this repo on your machine
 * Add the main repo as "upstream"
-* * git remote add upstream 
+* git remote add upstream https://github.com/devcbuea/dt-collect-web-client.git
 ### Starting a new project
 #### Get the latest version of the project
 * git fetch upstream
