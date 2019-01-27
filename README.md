@@ -21,5 +21,17 @@ make changes
 * write a good commit message
 * git push
 
+### Rebasing your branch
+When there have been changes in the main repository that you want to get, the cleanest option is often to rebase your branch on top of the latest commits.
+
+* Get the latest commits and update your local master branch
+* git fetch upstream
+* git checkout master
+* git pull upstream master
+* Rebase your in-progress feature branch
+* git checkout MyInProgressFeature
+* git rebase master
+* git push -f
+
 ## Run the poject
 `npm run start ` or `yarn start`
