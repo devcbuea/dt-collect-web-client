@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import './../assets/styles/App.css';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+
+import Home from './../containers/Home/Home.jsx';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <h1>DevC web app</h1>
-        </header>
-      </div>
+      <Router>
+        <Route exact path="/" component={Home} />
+      </Router>
     );
   }
 }
