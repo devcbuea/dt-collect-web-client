@@ -1,30 +1,31 @@
 import React from 'react';
 import LoginForm from './../login/LoginForm';
 import './login.css';
-
+import { Grid, Row, Col } from 'react-bootstrap';
+ 
 const LoginPage = () => (
     <div className="login-page">
-        <div className="content-form">
-            <div className="login-content">
-                <h1>facebook developer circle buea</h1>
-                <h1>data collection tool</h1>
-
-                <p>
-                    Cool Text is a FREE graphics generator for web pages and anywhere else you 
-                    need an impressive logo without a lot of design work. Simply choose what 
-                    kind of image you would like.Then fill out a form and you'll have your own 
-                    custom image created on the fly, Then fill out a form and you'll have your 
-                    own custom image created on the fly
-                </p>
-            </div>
-            <div className="login-form">
-                <LoginForm />
-            </div>
-        </div>
-        <div className="copy-right">
-            <p>Copyright (c) 2019</p>
-        </div>
+        <Grid>
+            <Row className="content-form">
+                <Col xs="12" md="7">
+                    <div className="login-content">
+                        <h1>facebook developer circle buea data collection tool</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.,
+                           Donec hendrerit tempor tellus. Donec pretium posuere tellus.
+                           Proin quam nisl, tincidunt et, mattis eget, convallis nec, purus.
+                           Cum sociis natoque penatibus et magnis dis parturient montes, 
+                           nascetur ridiculus mus.Nulla posuere. Donec vitae dolor.
+                           Nullam tristique diam non turpis. Cras placerat accumsan nulla.
+                           Nullam rutrum. Nam vestibulum accumsan nisl.
+                        </p>
+                    </div>
+                </Col>
+                <Col xs="12" md="5"> {<LoginForm />}</Col>
+            </Row>
+            <Row className="copy-right">
+                <p>Copyright (c) 2019</p>
+            </Row>
+        </Grid> 
     </div>
 );
-
 export default LoginPage;

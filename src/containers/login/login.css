@@ -12,14 +12,13 @@
     display: flex;
 }
 .login-content{
-    width: 65%;
     margin: 50px 10px 10px 10px;
     padding-top: 50px;
 }
 
 .login-content h1{
     color: #fff;
-    font-size: 34px;
+    font-size: 40px;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -28,7 +27,7 @@
     font-size: 18px;
     padding-top: 50px;
 }
-form{
+.login-form-section{
     background: #fff;
     margin: 40px 30px;
     padding: 20px;
@@ -104,4 +103,8 @@ form{
 h2{
     text-align: center;
     text-transform: uppercase;
+}
+.alt-login{
+    text-align: center;
+    margin-bottom: 0;
 }

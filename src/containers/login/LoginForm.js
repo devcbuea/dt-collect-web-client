@@ -2,19 +2,18 @@ import React from 'react';
 import { FormGroup, FormControl, ControlLabel, Button } from 'react-bootstrap';
 
 const LoginForm = () => (                              
-     <div>
+     <div className="login-form-section">
+          <h2>Login</h2>
           <form>
-               <h2>Login</h2>
-               <FormGroup controlId="formValidationSuccess1" validationState="success">
+               <FormGroup controlId="email-group" validationState="success">
                     <ControlLabel>Username or Email</ControlLabel>
                     <FormControl type="text" 
                          placeholder=""/>
                </FormGroup>
-               <FormGroup controlId="formValidationSuccess1" validationState="success">
+               <FormGroup controlId="email-group" validationState="success">
                     <ControlLabel>Password</ControlLabel>
                     <FormControl type="password" 
                          placeholder=""/>
-                    
                </FormGroup>
                <Button className="login-devc">Login</Button>
                <div className="pass-reset">
@@ -25,14 +24,12 @@ const LoginForm = () => (
                          <a href="#"> Forgot Password</a>
                     </div>
                </div>
-               <p>-OR-</p>
+               <p className="alt-login">-OR-</p>
                <div className="social-login">
                     <Button className="login-facebook">Login with FaceBook</Button>
                     <Button className="login-google">Login with Google</Button>
                </div>
-               
           </form>
      </div>
 );
-
 export default LoginForm;
