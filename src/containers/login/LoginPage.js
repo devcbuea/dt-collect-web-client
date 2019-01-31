@@ -6,9 +6,9 @@ import { Grid, Row, Col } from 'react-bootstrap';
 const LoginPage = () => (
   <div className="login-page">
     <Grid>
-      <Row className="content-form">
+      <Row className="">
         <Col xs="12" md="7">
-          <div className="login-content">
+          <div className="">
             <h1>facebook developer circle buea data collection tool</h1>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.,
                Donec hendrerit tempor tellus. Donec pretium posuere tellus.
