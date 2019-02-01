@@ -1,5 +1,7 @@
 import React from 'react';
-import { FormGroup, FormControl, ControlLabel, Button } from 'react-bootstrap';
+import { FormGroup, FormControl, ControlLabel, Button,
+     Row, Col
+} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const LoginForm = () => (
@@ -15,14 +17,14 @@ const LoginForm = () => (
                     <FormControl type="password" placeholder="" />
                </FormGroup>
                <Button className="login-devc">Login</Button>
-               <div className="pass-reset">
-                    <div className="new-account-link">
-                         <p>New here? <Link to="/"> Create an account</Link>  |</p>
-                    </div>
-                    <div className="forgot-pass">
+               <Row>
+                    <Col sm={7} xs={12} className="new-account-link">
+                         <p>New here? <Link to="/"> Create an account</Link></p>
+                    </Col>
+                    <Col sm={5} xs={12} className="forgot-pass">
                          <Link to="/"> Forgot Password</Link>
-                    </div>
-               </div>
+                    </Col>
+               </Row>
                <p className="alt-login">-OR-</p>
                <div className="social-login">
                     <Button className="login-facebook">Login with FaceBook</Button>
