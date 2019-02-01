@@ -1,0 +1,100 @@
+.login-page {
+    background: linear-gradient(to bottom, rgba(0, 252, 207, .5), rgba(72, 133, 237, .5)), url(../../assets/images/chart-coffee-cup-590037.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+}
+
+.main-page{
+    margin: 70px 50px 70px 50px;
+}
+
+h1{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.login-content{
+    margin: 15% 10% 15% 10%;
+}
+
+.login-content p{
+    color: #fff;
+    font-size: 18px;
+    padding-top: 50px;
+}
+.login-form-section{
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.social-login{
+    display: grid;
+}
+.new-account-link a,
+.forgot-pass a{
+    text-decoration: none;
+    color: #4885ed;
+}
+.control-label{
+    font-size: 18px;
+    padding-bottom: 4px;
+}
+
+.form-control{
+    height: 35px;
+    border: 1px solid #c4c4c4;
+}
+
+.form-control:focus, .form-control:active{
+    outline: #07ffd2;
+}
+
+.btn {
+    display: block;
+    width: -webkit-fill-available;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+}
+
+.login-devc{
+    background: linear-gradient(to right, rgba(0, 252, 207, .7), rgba(72, 133, 237, .7));
+}
+
+.btn{
+    outline: none;
+}
+
+.login-facebook{
+    background: #4885ED;
+}
+
+.login-google{
+    background: rgb(187, 25, 47)
+}
+.login-form p{
+    text-align: center;
+    margin-bottom: 0;
+}
+.copy-right{
+    color: #fff;
+}
+h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+.alt-login{
+    text-align: center;
+    margin-bottom: 0;
+}
+.form-area{
+    padding: 4vh 11vw 4vh 10vw;
+}
