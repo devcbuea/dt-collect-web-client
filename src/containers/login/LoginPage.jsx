@@ -1,6 +1,6 @@
 import React from 'react';
 import LoginForm from './LoginForm';
-import './login.css';
+import './login.css'; 
 import { Row, Col } from 'react-bootstrap';
 
 const LoginPage = () => (
