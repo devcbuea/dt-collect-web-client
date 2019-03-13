@@ -2,10 +2,9 @@ import React, { Component } from 'react';
 import { Row, Col } from 'react-bootstrap';
 import './../../assets/styles/App.css';
 
-import LoginForm from './../login/LoginForm';
+import LoginForm from './../Login/LoginForm';
 import SignupForm from './../Signup/SignupForm';
 import './Home.css';
-
 class Home extends Component {
     constructor(props) {
         super(props);
