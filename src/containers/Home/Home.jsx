@@ -4,6 +4,7 @@ import './../../assets/styles/App.css';
 
 import LoginForm from './../Login/LoginForm';
 import SignupForm from './../Signup/SignupForm';
+import Header from './../../components/Header.jsx';
 import './Home.css';
 class Home extends Component {
     constructor(props) {
