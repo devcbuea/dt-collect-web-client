@@ -5,23 +5,23 @@ import {
 } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-import './login.css';
+import './../login/login.css';
 
-class LoginForm extends Component {
+class SignupForm extends Component {
      constructor(props) {
           super(props);
-  
-          this.handleSignup = this.handleSignup.bind(this);
-      }
-  
-      handleSignup() {
-          this.props.handleAuthForm('signup');
-      }
+
+          this.handleLogin = this.handleLogin.bind(this);
+     }
+
+     handleLogin() {
+          this.props.handleAuthForm('login');
+     }
 
      render() {
           return (
                <div className="login-form-section">
-                    <h2>Login</h2>
+                    <h2>Signup</h2>
                     <form>
                          <FormGroup controlId="email-group" validationState="success">
                               <ControlLabel>Username or Email</ControlLabel>
@@ -31,10 +31,10 @@ class LoginForm extends Component {
                               <ControlLabel>Password</ControlLabel>
                               <FormControl type="password" placeholder="" />
                          </FormGroup>
-                         <Button className="login-devc">Login</Button>
+                         <Button className="login-devc">Signup</Button>
                          <Row>
                               <Col sm={7} xs={12} className="new-account-link">
-                                   <p>New here? <span className="link" onClick={this.handleSignup}> Create an account</span></p>
+                                   <p>Already have an account? <span className="link" onClick={this.handleLogin}> Login</span></p>
                               </Col>
                               <Col sm={5} xs={12} className="forgot-pass">
                                    <Link to="/"> Forgot Password</Link>
@@ -50,4 +50,4 @@ class LoginForm extends Component {
           );
      }
 }
-export default LoginForm;
+export default SignupForm;
