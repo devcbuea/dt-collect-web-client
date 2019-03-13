@@ -6,7 +6,7 @@
 }
 
 .main-page{
-    margin: 70px 50px 70px 50px;
+   overflow: hidden;
 }
 
 h1{
@@ -23,4 +23,12 @@ h1{
     color: #fff;
     font-size: 18px;
     padding-top: 50px;
+}
+
+.form-area{
+    padding: 15vh 11vw 10vh 10vw;
+}
+
+.copy-right{
+    color: #fff;
 }

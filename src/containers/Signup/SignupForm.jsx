@@ -23,11 +23,23 @@ class SignupForm extends Component {
                <div className="login-form-section">
                     <h2>Signup</h2>
                     <form>
-                         <FormGroup controlId="email-group" validationState="success">
-                              <ControlLabel>Username or Email</ControlLabel>
+                         <FormGroup validationState="success">
+                              <ControlLabel>Username</ControlLabel>
                               <FormControl type="text" placeholder="" />
                          </FormGroup>
-                         <FormGroup controlId="email-group" validationState="success">
+                         <FormGroup validationState="success">
+                              <ControlLabel>Firstname</ControlLabel>
+                              <FormControl type="text" placeholder="" />
+                         </FormGroup>
+                         <FormGroup validationState="success">
+                              <ControlLabel>Lastname</ControlLabel>
+                              <FormControl type="text" placeholder="" />
+                         </FormGroup>
+                         <FormGroup validationState="success">
+                              <ControlLabel>Email</ControlLabel>
+                              <FormControl type="email" placeholder="" />
+                         </FormGroup>
+                         <FormGroup validationState="success">
                               <ControlLabel>Password</ControlLabel>
                               <FormControl type="password" placeholder="" />
                          </FormGroup>
@@ -42,8 +54,8 @@ class SignupForm extends Component {
                          </Row>
                          <p className="alt-login">-OR-</p>
                          <div className="social-login">
-                              <Button className="login-facebook">Login with FaceBook</Button>
-                              <Button className="login-google">Login with Google</Button>
+                              <Button className="login-facebook">Signup with FaceBook</Button>
+                              <Button className="login-google">Signup with Google</Button>
                          </div>
                     </form>
                </div>

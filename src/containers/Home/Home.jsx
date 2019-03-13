@@ -37,15 +37,15 @@ class Home extends Component {
                                    Nullam tristique diam non turpis. Cras placerat accumsan nulla.
                                    Nullam rutrum. Nam vestibulum accumsan nisl.
                                 </p>
+                                <div className="copy-right">
+                                    <p>Copyright (c) 2019</p>
+                                </div>
                             </div>
                         </Col>
                         <Col className="form-area" xs="12" md="6">
                             {this.state.authForm === 'signup' ? <SignupForm handleAuthForm={this.handleAuthForm} /> : null}
                             {this.state.authForm === 'login' ? <LoginForm handleAuthForm={this.handleAuthForm} /> : null}
                         </Col>
-                    </Row>
-                    <Row className="copy-right">
-                        <p>Copyright (c) 2019</p>
                     </Row>
                 </div>
             </div>
