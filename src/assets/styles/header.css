@@ -1,3 +1,24 @@
-.navbar{
-    margin-top: 100px;
+.navbar .container{
+    margin-left: 3vw;
+    margin-right: 3vw;
+    min-width: 88%;
+}
+
+.navbar-nav{
+    flex-direction: row;   
+    width: 50%; 
+    justify-content: flex-end;
+}
+
+.navbar-nav li{
+    margin-left: 10%;    
+}
+
+.navbar-nav li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navbar-brand{
+    color: #ffffff;
 }

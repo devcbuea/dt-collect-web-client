@@ -24,9 +24,10 @@ class Home extends Component {
     render() {
         return (
             <div className="home-page">
+                <Header />
                 <div className="main-page">
                     <Row>
-                        <Col xs="12" md="6">
+                        <Col xs={12} md={6}>
                             <div className="login-content">
                                 <h1>facebook developer circle buea data collection tool</h1>
                                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.,
@@ -42,7 +43,7 @@ class Home extends Component {
                                 </div>
                             </div>
                         </Col>
-                        <Col className="form-area" xs="12" md="6">
+                        <Col className="form-area" xs={12} md={6}>
                             {this.state.authForm === 'signup' ? <SignupForm handleAuthForm={this.handleAuthForm} /> : null}
                             {this.state.authForm === 'login' ? <LoginForm handleAuthForm={this.handleAuthForm} /> : null}
                         </Col>
