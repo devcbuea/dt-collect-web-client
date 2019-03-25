@@ -1,17 +1,22 @@
 import React from 'react';
-import { Navbar, Nav} from 'react-bootstrap';
+import { Navbar, Nav, NavItem } from 'react-bootstrap';
 
 import './../assets/styles/header.css';
 
-const header = () => (
-    <Navbar bg="light" variant="light">
-    <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-    <Nav className="mr-auto">
-      <Nav.Link href="#home">Home</Nav.Link>
-      <Nav.Link href="#features">Features</Nav.Link>
-      <Nav.Link href="#pricing">Pricing</Nav.Link>
-    </Nav>
-  </Navbar>
-
- ); 
-export default header;
+const Header = () => {
+  return (
+    <Navbar collapseOnSelect>
+      <Navbar.Header>
+        <Navbar.Brand>
+          Data Collection Tool
+        </Navbar.Brand>
+      </Navbar.Header>
+        <Nav pullRight>
+          <NavItem> Link One </NavItem>
+          <NavItem> Link Two </NavItem>
+          <NavItem> Link Three </NavItem>
+        </Nav>
+    </Navbar>
+  );
+};
+export default Header;

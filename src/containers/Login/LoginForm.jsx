@@ -24,10 +24,10 @@ class LoginForm extends Component {
                     <h2>Login</h2>
                     <form>
                          <FormGroup controlId="email-group" validationState="success">
-                              <ControlLabel>Username or Email</ControlLabel>
+                              <ControlLabel>Email</ControlLabel>
                               <FormControl type="text" placeholder="" />
                          </FormGroup>
-                         <FormGroup controlId="email-group" validationState="success">
+                         <FormGroup controlId="password-group" validationState="success">
                               <ControlLabel>Password</ControlLabel>
                               <FormControl type="password" placeholder="" />
                          </FormGroup>
