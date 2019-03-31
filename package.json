@@ -5,6 +5,9 @@
   "dependencies": {
     "axios": "^0.18.0",
     "bootstrap": "^4.2.1",
+    "formBuilder": "^3.2.1",
+    "jquery": "^3.3.1",
+    "jquery-ui-sortable": "^1.0.0",
     "lodash": "^4.17.11",
     "react": "^16.7.0",
     "react-bootstrap": "^0.32.4",
