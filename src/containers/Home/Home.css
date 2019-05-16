@@ -1,19 +1,29 @@
 .home-page {
     background: linear-gradient(to bottom, rgba(0, 252, 207, .5), rgba(72, 133, 237, .5)), url(../../assets/images/chart-coffee-cup-590037.jpg);
     background-size: cover;
-    position: absolute;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /*position: absolute;
     top: 0; right: 0; bottom: 0; left: 0;
-    overflow: hidden;
+    overflow: hidden;*/
 }
 
-h1{
-    color: #fff;
-    font-size: 40px;
-    font-weight: 700;
-    text-transform: uppercase;
+.navbar{
+    flex: none;
 }
+
+.main-page{
+    margin-left: 3vw;
+    margin-right: 3vw;
+    flex: 1;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+
 .login-content{
-    margin: 15% 10% 15% 10%;
+    /*margin: 15% 10% 15% 10%;*/
 }
 
 .login-content p{
@@ -22,8 +32,29 @@ h1{
     padding-top: 50px;
 }
 
+.login-content h1{
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 554px){
+    .login-content h1{
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .login-content h1{
+        font-size: 1.5rem;
+    }
+}
+
 .form-area{
-    padding: 15vh 11vw 10vh 10vw;
+    /*padding: 15vh 11vw 10vh 10vw;*/
+    display: flex;
+    justify-content: center;
 }
 
 .copy-right{
