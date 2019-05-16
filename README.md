@@ -35,3 +35,6 @@ When there have been changes in the main repository that you want to get, the cl
 
 ## Run the poject
 `npm run start ` or `yarn start`
+
+## Front-end
+The UI is built with react-bootstrap (Docs: https://5c507d49471426000887a6a7--react-bootstrap.netlify.com/components/)
