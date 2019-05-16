@@ -5,7 +5,7 @@ import './../assets/styles/header.css';
 
 const Header = () => {
   return (
-    <Navbar inverse collapseOnSelect>
+    <Navbar collapseOnSelect>
       <Navbar.Header>
         <Navbar.Brand>
           Data Collection Tool
