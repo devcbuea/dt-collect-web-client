@@ -11,11 +11,11 @@ const Header = () => {
           Data Collection Tool
         </Navbar.Brand>
       </Navbar.Header>
-        <Nav pullRight>
-          <NavItem> Link One </NavItem>
-          <NavItem> Link Two </NavItem>
-          <NavItem> Link Three </NavItem>
-        </Nav>
+      <Nav pullRight>
+        <NavItem> Link One </NavItem>
+        <NavItem> Link Two </NavItem>
+        <NavItem> Link Three </NavItem>
+      </Nav>
     </Navbar>
   );
 };
