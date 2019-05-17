@@ -2,7 +2,10 @@
     background: #fff;
     padding: 20px;
     border-radius: 10px;
-    height: 530px;
+    width: 100%;
+    max-width: 500px;
+    height: 650px;
+    /*height: 530px;*/
     overflow-y: auto;
 }
 
@@ -20,7 +23,8 @@
 }
 
 .form-control{
-    height: 35px;
+    height: 60px;
+    /*height: 35px;*/
     border: 1px solid #c4c4c4;
 }
 
@@ -39,10 +43,13 @@
     cursor: pointer;
     color: #fff;
     font-size: 16px;
+    height: 50px;
 }
 
 .login-devc{
     background: linear-gradient(to right, rgba(0, 252, 207, .7), rgba(72, 133, 237, .7));
+    margin-bottom: 20px;
+    width: 100%;
 }
 
 .btn{
