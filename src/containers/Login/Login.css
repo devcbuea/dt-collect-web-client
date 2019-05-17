@@ -1,34 +1,34 @@
-.login-form-section{
+.login-form-section {
     background: #fff;
     padding: 20px;
     border-radius: 10px;
     width: 100%;
     max-width: 500px;
     height: 650px;
-    /*height: 530px;*/
     overflow-y: auto;
 }
 
-.social-login{
+.social-login {
     display: grid;
 }
-.new-account-link a,
-.forgot-pass a{
+
+.new-account-link a, .forgot-pass a {
     text-decoration: none;
     color: #4885ed;
 }
-.control-label{
+
+.control-label {
     font-size: 18px;
     padding-bottom: 4px;
 }
 
-.form-control{
+.form-control {
     height: 60px;
     /*height: 35px;*/
     border: 1px solid #c4c4c4;
 }
 
-.form-control:focus, .form-control:active{
+.form-control:focus, .form-control:active {
     outline: #07ffd2;
 }
 
@@ -46,38 +46,40 @@
     height: 50px;
 }
 
-.login-devc{
+.login-devc {
     background: linear-gradient(to right, rgba(0, 252, 207, .7), rgba(72, 133, 237, .7));
     margin-bottom: 20px;
     width: 100%;
 }
 
-.btn{
+.btn {
     outline: none;
 }
 
-.login-facebook{
+.login-facebook {
     background: #4885ED;
 }
 
-.login-google{
+.login-google {
     background: rgb(187, 25, 47)
 }
-.login-form p{
+
+.login-form p {
     text-align: center;
     margin-bottom: 0;
 }
 
-h2{
+h2 {
     text-align: center;
     text-transform: uppercase;
 }
-.alt-login{
+
+.alt-login {
     text-align: center;
     margin-bottom: 0;
 }
 
-.link{
+.link {
     color: #4885ED;
     cursor: pointer;
 }
