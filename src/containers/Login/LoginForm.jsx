@@ -41,9 +41,9 @@ class LoginForm extends Component {
 
      render() {
           return (
-               <div className="login-form-section">
+               <div className="form-section">
                     <h2>Login</h2>
-                    <form>
+                    <form className="login-form">
                          <FormGroup controlId="email-group" validationState="success">
                               <ControlLabel>Email</ControlLabel>
                               <FormControl value={this.state.email} onChange={this.onChange} name="email" type="text" placeholder="" />

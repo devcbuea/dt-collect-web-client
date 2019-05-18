@@ -47,10 +47,10 @@ class SignupForm extends Component {
 
      render() {
           return (
-               <div className="login-form-section">
+               <div className="form-section">
                     <h2>Signup</h2>
                     {this.props.status? <Alert className="text-center" bsStyle="warning">Account created! Please check your email to continue</Alert> : null}
-                    <form>
+                    <form className="signup-form">
                          <FormGroup validationState="success">
                               <ControlLabel>Username</ControlLabel>
                               <FormControl onChange={this.onChange} value={this.state.username} name="username" type="text" placeholder="" />
