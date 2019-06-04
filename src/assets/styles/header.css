@@ -1,3 +1,8 @@
+.navbar{
+    position: relative;
+    height: 100px;
+}
+
 .navbar .container{
     margin-left: 3vw;
     margin-right: 3vw;
@@ -5,20 +10,109 @@
 }
 
 .navbar-nav{
-    flex-direction: row;   
-    width: 50%; 
-    justify-content: flex-end;
+    flex-direction: row;
 }
 
 .navbar-nav li{
-    margin-left: 10%;    
+    margin: 0 1.5rem;    
 }
 
 .navbar-nav li a{
     color: #ffffff;
+    text-transform: capitalize;
     text-decoration: none;
+    outline: none;
+    font-weight: 500;
 }
 
 .navbar-brand{
     color: #ffffff;
+    line-height: 1rem;
+    font-weight: 700;
+}
+
+/*mobile navigation*/
+.nav-toggle{
+    position: absolute;
+    padding: 1rem;
+    right: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger, .hamburger:after, .hamburger:before {
+    content: "";
+    display: block;
+    width: 2rem;
+    height: 3px;
+    background: #fff;
+    transition: all .25s ease-in-out;
+}
+
+.hamburger:before {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+}
+
+.hamburger:after {
+    -webkit-transform: translateY(3px);
+    transform: translateY(3px);
+}
+
+@media screen and (max-width: 789px){
+
+    .navbar{
+        background-color: #333;
+        height: 65px;
+    }
+    
+    .navbar-nav{
+        position: absolute;
+        top: 65px; /*thae navbar's height*/
+        right: 0;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        z-index: 2;
+        transform-origin: top;
+        transform: scaleY(0);
+        transition: all linear 250ms;
+    }
+
+    .navbar-nav.on{
+        transform: scaleY(1);
+    }
+
+    .navbar-nav li{
+        margin: 0;
+        padding: .5em 0; 
+        background-color: #333;
+        border-top: 1px solid rgba(255, 255, 255, .2);
+        width: 100%;
+        text-align: center;
+    }
+    
+    .navbar-nav li a{
+        color: #ffffff;
+        text-decoration: none;
+    }
+    
+    .nav-toggle{
+        display: block;
+    }
+
+    .hamburger.on{
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    .hamburger.on::before {
+        opacity: 0;
+    }
+
+    .hamburger.on:after {
+        -webkit-transform: rotate(-90deg) translateX(3px);
+        transform: rotate(-90deg) translateX(3px);
+    }
+
 }
