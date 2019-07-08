@@ -33,8 +33,12 @@ When there have been changes in the main repository that you want to get, the cl
 * git rebase master
 * git push -f
 
+## Install packages
+* Run `npm install` or `yarn install`
+
 ## Run the poject
-`npm run start ` or `yarn start`
+* Run `npm install`
+* Run `npm run start ` or `yarn start`
 
 ## Front-end
 The UI is built with react-bootstrap (Docs: https://5c507d49471426000887a6a7--react-bootstrap.netlify.com/components/forms/)
